@@ -21,6 +21,7 @@ void kernelmain(void)
         /* инит стандартного \n */
         if (str[j] == '\n') {
 			i = (i / 160) * 160 + 160;
+			j++;
 		} else {
 		    /* ascii отображение */
 		    vidptr[i] = str[j];
